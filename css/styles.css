@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+hr {
+  width: 75%;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+}
+
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  color: #ffffff;
+}
+
+.centered-twizi {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  color: #ffffff;
+}
+@media screen and (max-width: 750px) {
+  .centered-twizi {
+    top: 10%;
+    font-size: 1.5rem;
+  }
+}
+
+
+.header {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.link {
+  padding: 10px;
+  color: #000000;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.links {
+  height: 90px;
+  position: absolute;
+  margin-right: 15%;
+  margin-left: 85%;
+  display: block;
+  text-align: center;
+  top: 30px;
+  left: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  max-width: 50%;
+  padding: 0 5rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.logo {
+  height: 90px;
+  position: absolute;
+  margin: auto;
+  display: block;
+  top: 30px;
+  left: 0;
+  right: 10;
+}
+
+.logo:hover {
+  height: 120px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 20px;
+  margin: 30px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.card-container {
+  font-family: "Poppin", sans-serif;
+}
+
+.card-index {
+  width: 90%;
+  background-color: #e2e2e4;
+  font-family: "Poppin", sans-serif;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 #000000;
+  transition: .3s;
+}
+
+.card-image {
+  width: 250px;
+  height: 200px;
+  /* filter: grayscale(100%); */
+  border-radius: 5px;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+.column-index {
+  float: left;
+  width: 20%;
+  padding: none;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+/* .row {margin: 0 -5px;} */
+.row {
+  margin-right: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row-twizi {
+  width: 100%;
+}
+
+.row-overview {
+  height: 350px;
+}
+
+.row-wide {
+  width: 100%
+}
+
+.column-twizi {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column-overview {
+  float: left;
+  width: 50%;
+  padding: 5%;
+}
+
+.column-overview-third {
+  float: left;
+  width: 33%;
+  padding: 5%;
+}
+
+.twizi-heading {
+  font-family: "Poppin", sans-serif;
+  font-size: large;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 5%;
+}
+
+.text-image {
+  box-shadow: 0 5px 10px 0 rgba(10, 1, 1, 0.2); /* this adds the "card" effect */
+}
+
+@media screen and (max-width: 750px) {
+  .twizi-heading {
+    font-size: small;
+    margin-top: 30%;
+  }
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 750px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .column-index {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .column-overview {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .centered {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .links {
+    height: 60px;
+    margin-left: 60%;
+    margin-top: 10px;
+  }
+}
