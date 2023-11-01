@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+  <title>Technologies</title>
+</head>
+<body>
+
+  <div class="containter">
+    <img class="header" src="../images/sand_two.jpg" width="100%">
+    <div class="centered" style="color:black"><center><h1>Parallel Technologies</h1></center></div>
+    <!-- <div class="centered"><center><h1>Technologies</h1></center></div> -->
+  </div>
+  <div class="nav-bar">
+    <div>
+      <img class="logo" src="../images/logo_swirl_2.gif">
+    </div>
+    <div class="links">
+      <a class="link" href="../index.html"><strong>0°0'00"</strong></a>
+    </div>
+  </div>
+
+  <h1 style="color:#9E9FA5; font-family:Poppins; margin-left:2%">Technologies Used</h1>
+  <hr color="#9E9FA5">
+
+
+  <div class="row">
+    <div class="column-index">
+      <div class="card card-index">
+          <h2><b>Selenium</b></h2>
+      </div>
+    </div>
+
+    <div class="column-index">
+      <div class="card card-index">
+          <h2><b>BeautifulSoup4</b></h2>
+      </div>
+    </div>
+
+    <div class="column-index">
+        <div class="card card-index">
+            <h2><b>Nominatim</b></h2>
+        </div>
+    </div>
+
+    <div class="column-index">
+      <div class="card card-index">
+          <h2><b>Pandas</b></h2>
+      </div>
+    </div>
+
+    <div class="column-index">
+        <div class="card card-index">
+          <h2><b>Numpy</b></h2>
+        </div>
+    </div>
+    
+  </div>
+
+  <div class="row">
+    <div class="column-index">
+      <div class="card card-index">
+          <h2><b>Mayplotlib</b></h2>
+      </div>
+    </div>
+
+    <div class="column-index">
+      <div class="card card-index">
+          <h2><b>Seaborn</b></h2>
+      </div>
+    </div>
+
+    <div class="column-index">
+        <div class="card card-index">
+            <h2><b>QGIS</b></h2>
+        </div>
+    </div>
+
+    <div class="column-index">
+      <div class="card card-index">
+          <h2><b>Aerialod</b></h2>
+      </div>
+    </div>
+
+    <div class="column-index">
+      <div class="card card-index">
+          <h2><b>Earth Engine</b></h2>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <h1 style="color:#9E9FA5; font-family:Poppins; margin-left:2%">Curated Datasets</h1>
+  <hr color="#9E9FA5">
+  <p style="font-family:Poppins; padding:5%">The challenging part of this project compared to the one on Paris real estate is the lack of public data in Morocco. To confront this challenge I compiled two datasets from various sources that contain a wealth of information about people and place.</p>
+
+  <!-- One Row Unit -->
+  <div style="font-family:Poppins" class="row-overview">
+    <div class="column-overview">
+      <h3>Dataset 1: maroc_immo.csv</h3>
+        <p>First I built a web scraper to collect data on the web about all of the properties for sale in Morocco; the data included the price, size, location and type of property and a vague description. This created a large dataset of about 6,000 entries. After examining this data, cleaning it up and eliminating false entries, it yielded about 3,500 entries. I also eliminated luxury properties from the dataset because they made it impossible to view the data properly. There were properties selling for 100,000 a square meter! You will not find anything close to that price in Paris. By itself, this does not tell us much. So using a geolocator I was able get the latitude and longitude of each property listing. I also gathered weather data from the closest weather station. In addition, I acquired aquifer type and bore hole flow amount shapefiles from the British Geological Survey and using QGIS I was able to determine the underground water reservoir underneath each property. And finally, again using QGIS, I was able to determine the euclidean distance from the property to the nearest stretch of coastline.</p>
+    </div>
+    <div class="column-overview">
+      <h3>Dataset 2: maroc_city_population.csv</h3>
+        <p>It's not difficult to find population data. However it is a challenge to find detailed population statics for every city and town in Morocco, at least for free. That's where excel is an amazing tool! I was able to take screenshots of extensive tables about population data for 100 cities and towns in Morocco. In excel it is possible to read the data into a table from screenshots. As in the first dataset, I was able cross reference each town with aquifer types and amounts from the British Geological Survey and again using QGIS, calculate the nearest euclidean distance to the sea.</p>
+    </div>
+  </div>
+
+  <div class="row"></div>
+
+     
+      
+     
+
+  <div class="row">
+    <div class="column-index">
+      <div class="card card-index">
+        <h4>Real estate listings Western Sahara, their type, size, geolocation and square kilometer population density.</h4>
+      </div>
+    </div>
+
+    <div class="column-index">
+      <div class="card card-index">
+        <h4>Real estate listings for all of Morocco, their type, price, size, geolocation and administrative region.</h4>
+      </div>
+    </div>
+  
+    <div class="column-index">
+        <div class="card card-index">
+          <h4>Acquifer data for all real estate listings, climate and building density data joined in QGIS layers.</h4>
+        </div>
+    </div>
+
+    <div class="column-index">
+      <div class="card card-index">
+        <h4>Weather data for all 16 Moroccan weather stations, their geolocation and administrative region</h4>
+      </div>
+    </div>
+
+    <div class="column-index">
+        <div class="card card-index">
+          <h4>Aquifer and groudwater use, climate data and time series remote sensing with QGIS layer joins.</h4>
+        </div>
+    </div>
+    
+  </div>
+
+  <h1 style="color:#9E9FA5; font-family:Poppins; margin-left:2%">Open Source Datasets</h1>
+  <hr color="#9E9FA5">
+
+  <div class="row">
+    <div class="column-index">
+      <div class="card card-index">
+          <h2><b>City and town population</b></h2>
+      </div>
+    </div>
+
+    <div class="column-index">
+      <div class="card card-index">
+          <h2><b>Population since 1950</b></h2>
+      </div>
+    </div>
+
+    <div class="column-index">
+        <div class="card card-index">
+            <h2><b>Temperature and rainfall since 1950</b></h2>
+        </div>
+    </div>
+  
+    <div class="column-index">
+      <div class="card card-index">
+          <h2><b>Groundwater region and bore hole flow</b></h2>
+      </div>
+    </div>
+
+    <div class="column-index">
+        <div class="card card-index">
+          <h2><b>Price of conrete since 2010</b></h2>
+        </div>
+    </div>
+    
+  </div>
+
+  <div class="row">
+    <div class="column-index">
+      <div class="card card-index">
+          <h2><b>Price of housing since 2010</b></h2>
+      </div>
+    </div>
+
+    <div class="column-index">
+      <div class="card card-index">
+          <h2><b>Price of building materials</b></h2>
+      </div>
+    </div>
+
+    <div class="column-index">
+        <div class="card card-index">
+            <h2><b>Ground water detection</b></h2>
+        </div>
+    </div>
+
+    <div class="column-index">
+      <div class="card card-index">
+          <h2><b>New constructions since 2000</b></h2>
+      </div>
+    </div>
+
+    <div class="column-index">
+        <div class="card card-index">
+          <h2><b>Registered asylum seekers</b></h2>
+        </div>
+    </div>
+    
+  </div>
+
+  <h1 style="color:#9E9FA5; font-family:Poppins; margin-left:2%">Data Sources</h1>
+  <hr color="#9E9FA5">
+
+    <div class="row">
+
+      <div class="column-index">
+        <a style="text-decoration:none; color:#000" href="https://www.data.gov.ma/">
+          <div class="card card-index">
+              <h2><b>Moroccan Open Data</b></h2>
+          </div>
+        </a>
+      </div>
+  
+      <div class="column-index">
+        <a style="text-decoration:none; color:#000" href="https://data.humdata.org/">
+          <div class="card card-index">
+              <h2><b>Humanitarian Data Exchange</b></h2>
+          </div>
+        </a>
+      </div>
+  
+      <div class="column-index">
+        <a style="text-decoration:none; color:#000" href="https://www.bgs.ac.uk/">
+          <div class="card card-index">
+              <h2><b>British Geological Survey</b></h2>
+          </div>
+        </a>
+      </div>
+  
+      <div class="column-index">
+        <a style="text-decoration:none; color:#000" href="https://data.un.org/">
+          <div class="card card-index">
+              <h2><b>United Nations Data Portal</b></h2>
+          </div>
+        </a>
+      </div>
+  
+      <div class="column-index">
+        <a style="text-decoration:none; color:#000" href="https://www.sciencebase.gov">
+          <div class="card card-index">
+              <h2><b>USGS HDMA Database</b></h2>
+          </div>
+        </a>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="column-index">
+      <a style="text-decoration:none; color:#000" href="https://www.data.gov.ma/">
+        <div class="card card-index">
+            <h1><b>UNHCR</b></h1>
+            <br>
+        </div>
+      </a>
+    </div>
+
+    <div class="column-index">
+      <a style="text-decoration:none; color:#000" href="https://data.humdata.org/">
+        <div class="card card-index">
+            <h2><b>La Mer</b></h2>
+            <h2><b>en chiffres</b></h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="column-index">
+      <a style="text-decoration:none; color:#000" href="https://www.bgs.ac.uk/">
+        <div class="card card-index">
+            <h2><b>World</b></h2>
+            <h2><b>Pop</b></h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="column-index">
+      <a style="text-decoration:none; color:#000" href="https://data.un.org/">
+        <div class="card card-index">
+            <h2><b>Missing Migrants Project</b></h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="column-index">
+      <a style="text-decoration:none; color:#000" href="https://www.sciencebase.gov">
+        <div class="card card-index">
+            <h2><b>Western Sahara Resource Watch</b></h2>
+        </div>
+      </a>
+    </div>
+    
+  </div>
+</div>
+    
+  </div>
+
+  
+</body>
+</html>
